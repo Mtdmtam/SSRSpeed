@@ -67,7 +67,7 @@ class ParserV2RayN(object):
 				"security":security,
 				"type":_type,
 				"path":path,
-				"network":net,
+				"network":net if net else "tcp",
 				"tls-host":tlsHost,
 				"host":host,
 				"tls":tls
